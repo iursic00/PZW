@@ -69,8 +69,7 @@ namespace DomacRad
 
             var randomNumber = random.Next(properties.Length);
 
-            return (Brush)properties[randomNumber].GetValue(null, null);
-        }
+            return (Brush)properties[randomNumber].GetValue(null, null);        }
 
     }
 }
