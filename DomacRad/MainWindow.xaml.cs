@@ -43,7 +43,7 @@ namespace DomacRad
             {
                 Width = 360,
                 Height = 40,
-                Fill = Brushes.Red,
+                Fill = _GetRandomBrush(),
                 Margin = new Thickness(5)
             };
             this.rectangleContainer.Children.Add(element);
@@ -55,10 +55,22 @@ namespace DomacRad
             {
                 Width=70,
                 Height=70,
-                Fill=Brushes.Orange,
+                Fill=_GetRandomBrush(),
                 Margin=new Thickness(5)
             };
             this.quadratContainer.Children.Add(element);
         }
+        private Brush _GetRandomBrush()
+        {
+            var random = new Random();
+
+            var brushesType = typeof(Brushes);
+            var properties = brushesType.GetProperties();
+
+            var randomNumber = random.Next(properties.Length);
+
+            return (Brush)properties[randomNumber].GetValue(null, null);
+        }
+
     }
 }
