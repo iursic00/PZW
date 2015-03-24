@@ -23,15 +23,10 @@
                 <StackPanel x:Name="quadratContainer">
                 <Rectangle Width="70" Height="70" Fill="Orange" Margin="5"></Rectangle>
                 <Rectangle Width="70" Height="70" Fill="Orange" Margin="5"></Rectangle>
-                <Rectangle Width="70" Height="70" Fill="Orange" Margin="5"></Rectangle>
-                <Rectangle Width="70" Height="70" Fill="Orange" Margin="5"></Rectangle>
                 </StackPanel>
             </ScrollViewer>
         <ScrollViewer Grid.Column="1" Grid.Row="3">
             <StackPanel x:Name="rectangleContainer">
-                <Rectangle Width="360" Height="40" Fill="Red" Margin="5"></Rectangle>
-                <Rectangle Width="360" Height="40" Fill="Red" Margin="5"></Rectangle>
-                <Rectangle Width="360" Height="40" Fill="Red" Margin="5"></Rectangle>
                 <Rectangle Width="360" Height="40" Fill="Red" Margin="5"></Rectangle>
                 <Rectangle Width="360" Height="40" Fill="Red" Margin="5"></Rectangle>
                 <Rectangle Width="360" Height="40" Fill="Red" Margin="5"></Rectangle>
